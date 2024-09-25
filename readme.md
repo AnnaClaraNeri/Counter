@@ -12,22 +12,25 @@ A project in Cairo language that develops a basic Smart Contract on Starknet, wi
 - RPC "http://127.0.0.1:5050"
 
 # Tests
-- First we use the command to read, change the contract:
+##- First we use the command to read, change the contract:
   "starkli call --rpc http://127.0.0.1:5050 0x078d65e4aacecdaa8debc745825a4b4e1711098cfd7584d09917e8e771fb665a get_contador"
-- Returns:
+##- Returns:
   "0x0000000000000000000000000000000000000000000000000000000000000012"
-- Then we use the other command, which adds 1 to the contract value:
+##- Then we use the other command, which adds 1 to the contract value:
   "starkli invoke --rpc http://127.0.0.1:5050 --account .c-wallets/account.json --keystore .c-wallets/keystore.json 0x078d65e4aacecdaa8debc745825a4b4e1711098cfd7584d09917e8e771fb665a increase
 _contador"
-- After the above step, when repeating the command:
+##- After the above step, when repeating the command:
   "starkli call --rpc http://127.0.0.1:5050 0x078d65e4aacecdaa8debc745825a4b4e1711098cfd7584d09917e8e771fb665a get_contador"
-- This returns us:
+##- This returns us:
   "0x0000000000000000000000000000000000000000000000000000000000000013"
 
 # Prints
 
-![11](https://github.com/user-attachments/assets/ce6137c3-0c7b-4199-9346-389c60409f8f)
-![22](https://github.com/user-attachments/assets/a07654de-fb1e-42d8-bd44-b1a3021f22e3)
-![2](https://github.com/user-attachments/assets/d7ca06ae-d5a0-4202-9c0e-1dacb98cb53a)
+![01](https://github.com/user-attachments/assets/7fbc8c44-6258-4129-9420-4efdcf0310a0)
+![02](https://github.com/user-attachments/assets/3076e580-aa7d-4627-bbfe-2eea25033b5e)
+![03](https://github.com/user-attachments/assets/7a0dc03e-f38a-47b4-b195-ffa7dac13f1f)
+
+
+
 
 
