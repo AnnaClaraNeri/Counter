@@ -14,23 +14,23 @@ A project in Cairo language that develops a basic Smart Contract on Starknet, wi
 # Tests
 - First we use the command to read, change the contract:
   
--"starkli call --rpc http://127.0.0.1:5050 0x078d65e4aacecdaa8debc745825a4b4e1711098cfd7584d09917e8e771fb665a get_contador"
+"starkli call --rpc http://127.0.0.1:5050 0x078d65e4aacecdaa8debc745825a4b4e1711098cfd7584d09917e8e771fb665a get_contador"
   
 - Returns:
   
--"0x0000000000000000000000000000000000000000000000000000000000000012"
+"0x0000000000000000000000000000000000000000000000000000000000000012"
   
 - Then we use the other command, which adds 1 to the contract value:
   
--"starkli invoke --rpc http://127.0.0.1:5050 --account .c-wallets/account.json --keystore .c-wallets/keystore.json 0x078d65e4aacecdaa8debc745825a4b4e1711098cfd7584d09917e8e771fb665a increase_contador"
+"starkli invoke --rpc http://127.0.0.1:5050 --account .c-wallets/account.json --keystore .c-wallets/keystore.json 0x078d65e4aacecdaa8debc745825a4b4e1711098cfd7584d09917e8e771fb665a increase_contador"
   
 - After the above step, when repeating the command:
   
--"starkli call --rpc http://127.0.0.1:5050 0x078d65e4aacecdaa8debc745825a4b4e1711098cfd7584d09917e8e771fb665a get_contador"
+"starkli call --rpc http://127.0.0.1:5050 0x078d65e4aacecdaa8debc745825a4b4e1711098cfd7584d09917e8e771fb665a get_contador"
   
 - This returns us:
   
--"0x0000000000000000000000000000000000000000000000000000000000000013"
+"0x0000000000000000000000000000000000000000000000000000000000000013"
 
 # Prints
 
